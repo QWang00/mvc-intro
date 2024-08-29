@@ -1,4 +1,4 @@
-package controller;
+package com.northcoders.drinkapi.controller;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,7 +21,7 @@ public class HomeControllerTests {
         String expectedContent = "Welcome to the Drinks API!";
 
         this.mockMvcController.perform(
-                        MockMvcRequestBuilders.get("/"))
+                        MockMvcRequestBuilders.get("/api/v1/"))
                 .andExpect(MockMvcResultMatchers.status().isOk())
                 .andExpect(MockMvcResultMatchers.content().string(expectedContent));
     }
