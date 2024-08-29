@@ -1,4 +1,4 @@
-package controller;
+package com.northcoders.drinkapi.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 public class HomeController {
 
     @GetMapping("/")
-    public String getGreeting(){
+    public String home(){
         return "Welcome to the Drinks API!";
     }
 }
