@@ -1,5 +1,6 @@
 package com.northcoders.drinkapi.service;
 
+import com.northcoders.drinkapi.model.Coffee;
 import org.springframework.stereotype.Service;
 import java.util.HashMap;
 import java.util.Map;
@@ -22,5 +23,9 @@ public class CoffeeService {
 
     public void resetCounter() {
         this.idCounter = 0;
+    }
+
+    public Coffee getCoffeeByName(String name){
+        return new Coffee(++idCounter,name);
     }
 }
