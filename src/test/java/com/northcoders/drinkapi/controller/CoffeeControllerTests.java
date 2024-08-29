@@ -18,7 +18,7 @@ import static org.mockito.Mockito.when;
 
 @AutoConfigureMockMvc
 @SpringBootTest
-public class CoffeeModelControllerTests {
+public class CoffeeControllerTests {
 
     @Autowired
     private MockMvc mockMvcController;
